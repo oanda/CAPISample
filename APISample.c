@@ -21,7 +21,7 @@ int main() {
     curl = curl_easy_init();
     if(curl) {
         curl_easy_setopt(curl, CURLOPT_URL,
-                         "http://api-sandbox.oanda.com/v1/quote?instruments=EUR_USD");
+                         "http://api-sandbox.oanda.com/v1/quote?instruments=EUR_USD%2CUSD_CAD%2CUSD_JPY");
         
         /* Perform the request, res will get the return code */
         res = curl_easy_perform(curl);
