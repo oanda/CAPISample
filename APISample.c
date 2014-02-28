@@ -1,11 +1,3 @@
-//
-//  main.c
-//  testhelloc
-//
-//  Created by Jimmy Sun on 2012-11-28.
-//  Copyright (c) 2012 OANDA. All rights reserved.
-//
-
 /** Description
  *  Sample project in C using libcurl.
  *  Requests the rate data for EUR/USD, USD/CAD, AND USD/JPY and outputs them to standard output.
@@ -22,6 +14,14 @@ int main() {
     if(curl) {
         curl_easy_setopt(curl, CURLOPT_URL,
                          "http://api-sandbox.oanda.com/v1/quote?instruments=EUR_USD");
+
+        struct curl_slist *chunk = NULL;
+
+        // uncomment to add authorization header: not required for sandbox
+        // chunk = curl_slist_append(chunk, "Authorization: Bearer <your access token>");
+        
+        /* use custom headers */
+        res = curl_easy_setopt(curl, CURLOPT_HTTPHEADER, chunk);
         
         /* Perform the request, res will get the return code */
         res = curl_easy_perform(curl);
@@ -34,6 +34,9 @@ int main() {
         
         /* always cleanup */
         curl_easy_cleanup(curl);
+
+        /* free the custom headers */ 
+        curl_slist_free_all(chunk);
     }
     return 0;
 }
