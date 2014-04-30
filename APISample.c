@@ -13,7 +13,7 @@ int main() {
     curl = curl_easy_init();
     if(curl) {
         curl_easy_setopt(curl, CURLOPT_URL,
-                         "http://api-sandbox.oanda.com/v1/quote?instruments=EUR_USD");
+                         "http://api-sandbox.oanda.com/v1/prices?instruments=EUR_USD");
 
         struct curl_slist *chunk = NULL;
 
