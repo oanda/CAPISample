@@ -15,25 +15,25 @@ Run the output file using the following command.
 
 Outputs to standard output.
 
-{
-    "prices" : [
-        {
-            "instrument" : "EUR_USD",
-            "time" : "2014-07-29T15:29:34.741618Z",
-            "bid" : 1.25955,
-            "ask" : 1.25964
-        },
-        {
-            "instrument" : "USD_CAD",
-            "time" : "2014-07-29T15:29:36.047687Z",
-            "bid" : 1.0641,
-            "ask" : 1.06454
-        },
-        {
-            "instrument" : "USD_JPY",
-            "time" : "2014-07-29T15:29:34.838243Z",
-            "bid" : 90.111,
-            "ask" : 90.122
-        }
-    ]
-}
+    {
+        "prices" : [
+            {
+                "instrument" : "EUR_USD",
+                "time" : "2014-07-29T15:29:34.741618Z",
+                "bid" : 1.25955,
+                "ask" : 1.25964
+            },
+            {
+                "instrument" : "USD_CAD",
+                "time" : "2014-07-29T15:29:36.047687Z",
+                "bid" : 1.0641,
+                "ask" : 1.06454
+            },
+            {
+                "instrument" : "USD_JPY",
+                "time" : "2014-07-29T15:29:34.838243Z",
+                "bid" : 90.111,
+                "ask" : 90.122
+            }
+        ]
+    }
