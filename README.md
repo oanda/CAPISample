@@ -15,4 +15,13 @@ Run the output file using the following command.
 
 Outputs to standard output.
 
-    {"prices":[{"instrument":"EUR_USD","time":1354159723.558818,"bid":1.29521,"ask":1.29553},{"instrument":"USD_CAD","time":1354159054.813452,"bid":0.99198,"ask":0.99223},{"instrument":"USD_JPY","time":1354159744.355151,"bid":82.053,"ask":82.069}]}
+    {
+        "prices" : [
+            {
+                "instrument" : "EUR_USD",
+                "time" : "2014-07-29T15:18:37.659150Z",
+                "bid" : 1.25636,
+                "ask" : 1.25645
+            }
+        ]
+    }
